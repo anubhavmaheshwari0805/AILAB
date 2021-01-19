@@ -35,13 +35,13 @@ def backtrack(x, enemy, domain, assigned) :
     assigned[v]=-1
     return 0
 
-n=input("Enter the number of people : ")
-c=input("Enter the number of tables : ")
-l=[]
-line=input("Enter elements of list L(people who should not sit together) till an empty newline character :\n").split()
-while(line) :
-    l.append((int(line[0]),int(line[1])))
-    line=input().split()
+n=8 #input("Enter the number of people : ")
+c=3 #input("Enter the number of tables : ")
+#l=[]
+#line=input("Enter elements of list L(people who should not sit together) till an empty newline character :\n").split()
+#while(line) :
+#    l.append((int(line[0]),int(line[1])))
+#    line=input().split()
 l=[(0,2),(0,3),(0,4),(1,4),(1,7),(2,3),(2,6),(3,4),(3,7),(4,7),(5,6)]
 enemy=[[] for i in range(n)]
 for i in l :
